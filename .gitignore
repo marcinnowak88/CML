@@ -1,30 +1,46 @@
-venv2/
-venv2/
-venv2/
-.git/objects/pack/pack-6f88c268a3ac48d5f34535258cf63bfe33b8f28b.pack
-.git/objects/pack/pack-5d64e04956becc8d020f1d8967a1065cebe35e2c.pack
-venv2/
-.git/objects/pack/pack-6f88c268a3ac48d5f34535258cf63bfe33b8f28b.pack
-.git/objects/pack/pack-5d64e04956becc8d020f1d8967a1065cebe35e2c.pack
-venv2/
-venv2/
-
-# Ignorowanie dużych plików modelu
-models/covid_model.pth
-
-# Ignorowanie lokalnego repozytorium i pliku bfg.jar
-CML.git/
-bfg.jar
-
-# Ignoruj wirtualne środowiska
+# Ignorowanie środowisk wirtualnych
 venv/
 venv2/
-env/
+.env/
+*.env
 
-# Ignoruj pliki binarne i biblioteki
+# Ignorowanie plików konfiguracyjnych i logów
+*.log
+*.sqlite3
+*.db
+
+# Ignorowanie plików systemowych
+.DS_Store
+Thumbs.db
+
+# Ignorowanie plików kompilacji Pythona
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorowanie plików związanych z Jupyter Notebook
+.ipynb_checkpoints
+
+# Ignorowanie plików dużych bibliotek
 *.dylib
 *.so
 *.dll
 
-# Ignoruj foldery site-packages
-**/site-packages/
+# Ignorowanie bibliotek TensorFlow, PyTorch i innych modeli
+models/
+*.pth
+*.h5
+*.ckpt
+
+# Ignorowanie plików z narzędzi takich jak pytest i coverage
+htmlcov/
+.coverage
+.cache
+.pytest_cache/
+
+# Ignorowanie lokalnych repozytoriów Git i narzędzi
+CML.git/
+bfg.jar
+
+# Ignorowanie plików LFS (jeśli używasz Git LFS, możesz dodać odpowiednie reguły)
+*.lfs
