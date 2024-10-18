@@ -44,3 +44,6 @@ bfg.jar
 
 # Ignorowanie plików LFS (jeśli używasz Git LFS, możesz dodać odpowiednie reguły)
 *.lfs
+# Ignorowanie plików modeli i danych
+models/
+uploads/
