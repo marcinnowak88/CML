@@ -6,3 +6,25 @@ venv2/
 venv2/
 .git/objects/pack/pack-6f88c268a3ac48d5f34535258cf63bfe33b8f28b.pack
 .git/objects/pack/pack-5d64e04956becc8d020f1d8967a1065cebe35e2c.pack
+venv2/
+venv2/
+
+# Ignorowanie dużych plików modelu
+models/covid_model.pth
+
+# Ignorowanie lokalnego repozytorium i pliku bfg.jar
+CML.git/
+bfg.jar
+
+# Ignoruj wirtualne środowiska
+venv/
+venv2/
+env/
+
+# Ignoruj pliki binarne i biblioteki
+*.dylib
+*.so
+*.dll
+
+# Ignoruj foldery site-packages
+**/site-packages/
