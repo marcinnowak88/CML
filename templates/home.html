@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CML</title>
+    <title>Covid_detector with ML</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -11,9 +11,8 @@
     <!-- Nawigacja -->
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <h1 class="text-primary">CML</h1>
+            <h1 class="text-primary">Covid_detector with ML</h1>
         </a>
-        <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Zaloguj się</a>
     </nav>
 
     <!-- Sekcja główna -->
@@ -21,15 +20,14 @@
         <div class="row justify-content-center">
             <!-- Obraz -->
             <div class="col-md-6 text-center">
-                <img src="{{ url_for('static', filename='images/covid_image.png') }}" alt="COVID Image" class="img-fluid mb-4" style="max-width: 300px;">
+                <img src="{{ url_for('static', filename='images/covid_image.jpeg') }}" alt="COVID Image" class="img-fluid mb-4" style="max-width: 300px;">
             </div>
         </div>
 
-        <!-- Tekst powitalny -->
+        <!-- Przycisk logowania pod obrazem -->
         <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <p class="lead">Witamy w aplikacji CML! Aplikacja do monitorowania i diagnostyki COVID.</p>
-                <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg">Zaloguj się</a>
+            <div class="col-md-6 text-center">
+                <a href="{{ url_for('login') }}" class="btn btn-outline-primary mt-3">Zaloguj się</a>
             </div>
         </div>
     </div>

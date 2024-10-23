@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,9 @@
         <form action="{{ url_for('diagnosis') }}" method="POST" enctype="multipart/form-data" class="mt-4">
             <div class="form-group">
                 <label for="file">Wybierz plik:</label>
-                <input type="file" class="form-control" id="file" name="file" required>
+                <input type="file" class="form-control w-auto" id="file" name="file" required>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Prześlij i otrzymaj diagnozę</button>
+            <button type="submit" class="btn btn-primary w-auto">Prześlij i otrzymaj diagnozę</button>
         </form>
     </div>
 
